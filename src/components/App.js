@@ -38,8 +38,21 @@ var App = React.createClass({
     render:function(){
         return (
             <div className="app">
-                <div className="app-head">
-
+                <div className="row app-head">
+                    <div className="header-left col-lg-3">
+                        <div className="header-left-en col-lg-4">
+                            <a href="#">MUOU</a>
+                        </div>
+                        <div className="header-left-ch col-lg-8">
+                            <a href="#">成都陌友科技</a>
+                        </div>
+                    </div>
+                    <div className="header-right col-lg-1 col-lg-offset-1">
+                        <div className="avatar col-lg-5">
+                            <img src={require('../images/3.jpg')} />
+                        </div>
+                        <div className="nickName col-lg-7"><a href="#">梅梅</a></div>
+                    </div>
                 </div>
                 <div className="app-nav">
                     <ul>
