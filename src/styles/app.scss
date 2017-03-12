@@ -6,10 +6,13 @@ a{
     text-decoration: none;
 }
 
+.app{
+    width:100%;
+    height:100%;
+}
 .app-head{
     width:100%;
     height:80px;
-    float:left;
     background:#4678C7;
     padding:0;
     margin:0;
@@ -54,11 +57,129 @@ a{
     font-size:26px;
     color:#ffffff;
 }
+.app-contain{
+    width: 100%;
+    height: 894px;
+    padding: 0;
+    margin: 0;
+    .row{
+        margin-right:0;
+        height:100%;
+    }
+}
+.app-contain:after{
+    content:".";
+    height:0;
+    display:block;
+    overflow: hidden;
+    clear:both;
+}
 .app-nav{
-    width:250px;
-    height:auto;
-    float:left;
-    background:greenyellow;
+    height:100%;
+    background:#1A2636;
+    padding-right:0;
+    margin-left:-35px;
+    .ant-menu li:nth-child(1){
+        .anticon{
+            background:url(../images/user12.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(2){
+        .anticon{
+            background:url(../images/user22.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(3){
+        .anticon{
+            background:url(../images/user3.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(4){
+        .anticon{
+            background:url(../images/user4.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(5){
+        .anticon{
+            background:url(../images/user4.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(6){
+        .anticon{
+            background:url(../images/user4.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(7){
+        .anticon{
+            background:url(../images/user55.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(8){
+        .anticon{
+            background:url(../images/user66.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(9){
+        .anticon{
+            background:url(../images/user77.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(10){
+        .anticon{
+            background:url(../images/user88.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(11){
+        .anticon{
+            background:url(../images/user99.png) no-repeat left top;
+        }
+    }
+    .ant-menu li:nth-child(12){
+        .anticon{
+            background:url(../images/user1010.png) no-repeat left top;
+        }
+    }
+    .ant-menu-inline .ant-menu-submenu-title {
+        line-height: 60px;
+        height: 60px;
+        font-size:16px;
+        text-align:center;
+        .anticon{
+            margin-right:0;
+            float:left;
+            width:24px;
+            height:24px;
+            background:pink;
+            margin-left:20px;
+            margin-top:22px;
+
+        }
+        .anticon-mail:before,.anticon-appstore:before,.anticon-setting:before{
+            content:"";
+            display:none;
+        }
+        span{
+            float:left;
+            margin-left:36px;
+        }
+    }
+    .ant-menu-dark{
+        background:#1A2636;
+    }
+    .ant-menu-dark .ant-menu-inline .ant-menu-item-selected{
+        background-color:#285e8e;
+    }
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub{
+        background:#2A3852;
+        a{
+            color:#767D84;
+        }
+    }
+    .ant-menu-inline .ant-menu-item{
+        font-size:16px;
+        text-align:center;
+        padding-right:36px;
+    }
 }
 
 

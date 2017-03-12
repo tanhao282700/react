@@ -32,6 +32,14 @@ module.exports = {
         ]
     },
 
+    babel: {
+        presets: ['es2015', 'stage-0', 'react'],
+        plugins: ['transform-runtime', ['import', {
+            libraryName: 'antd',
+            style: 'css'
+        }]]
+    },
+
     postcss: [
         require('autoprefixer')    //调用autoprefixer插件,css3自动补全
     ],
