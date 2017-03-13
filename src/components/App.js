@@ -123,7 +123,7 @@ var App = React.createClass({
                             <a href="#">MUOU</a>
                         </div>
                         <div className="header-left-ch col-lg-8">
-                            <a href="#">成都陌友科技</a>
+                            <a href="#">react项目实例</a>
                         </div>
                     </div>
                     <div className="header-right col-lg-1 col-lg-offset-1">
