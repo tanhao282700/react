@@ -78,7 +78,7 @@ a{
     height:100%;
     background:#1A2636;
     padding-right:0;
-    margin-left:-35px;
+    /*margin-left:-35px;*/
     .ant-menu li:nth-child(1){
         .anticon{
             background:url(../images/user12.png) no-repeat left top;
@@ -145,12 +145,11 @@ a{
         font-size:16px;
         text-align:center;
         .anticon{
-            margin-right:0;
+            margin-right:28px;
             float:left;
             width:24px;
             height:24px;
             background:pink;
-            margin-left:20px;
             margin-top:22px;
 
         }
@@ -160,7 +159,7 @@ a{
         }
         span{
             float:left;
-            margin-left:36px;
+            margin-left:23px;
         }
     }
     .ant-menu-dark{
@@ -172,18 +171,23 @@ a{
     .ant-menu-dark .ant-menu-inline.ant-menu-sub{
         background:#2A3852;
         a{
-            color:#767D84;
+            color:#fff;
+            text-decoration:none;
         }
     }
     .ant-menu-inline .ant-menu-item{
-        font-size:16px;
-        text-align:center;
-        padding-right:36px;
+        a{
+            font-size:16px;
+            text-align:center;
+            padding-right:54px;
+        }
     }
 }
 
-
-
+.app-view{
+    height:100%;
+    background:pink;
+}
 
 
 
