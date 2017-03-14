@@ -84,7 +84,7 @@ class Sider extends React.Component {
                 </SubMenu>
                 <SubMenu key="sub9" title={<span><Icon type="setting" /><span>帮助反馈</span></span>}>
                     <Menu.Item key="14"><a href="#/feedback/help">帮助中心</a></Menu.Item>
-                    <Menu.Item key="15"><a href="#/feedback/feedback"></a>意见反馈</Menu.Item>
+                    <Menu.Item key="15"><a href="#/feedback/feedback">意见反馈</a></Menu.Item>
                 </SubMenu>
                 <SubMenu key="sub10" title={<span><Icon type="setting" /><span>资金管理</span></span>}>
                     <Menu.Item key="16"><a href="#">交易记录</a></Menu.Item>

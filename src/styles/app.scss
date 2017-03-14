@@ -66,6 +66,11 @@ a{
         margin-right:0;
         height:100%;
     }
+    .app-view{
+        height:100%;
+        padding-left:20px;
+        padding-right:0;
+    }
 }
 .app-contain:after{
     content:".";
@@ -184,10 +189,7 @@ a{
     }
 }
 
-.app-view{
-    height:100%;
-    background:pink;
-}
+
 
 
 

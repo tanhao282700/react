@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-
+import Headnav from '../../common/nav.js';
 
 /*React创建组件的三种方式:
     函数式定义的无状态组件
@@ -52,16 +52,24 @@ import ReactDom from 'react-dom';
  4、Mixins的支持不同
         */
 
-var List = React.createClass({
-    render: function() {
-        return (
-            <div>
-                <h5 className="title">hello, 我是first!</h5>
-                <div><a href="#/">返回首页</a></div>
-                <div>这是账号列表页</div>
+var usersStyle={
+    width:"100%",
+    height:"100%",
+}
+var submodule = [
+    {
+        id:"1",
+        contend:"账号管理"
+    }
+];
+class Users extends React.Component{
+    render(){
+        return(
+            <div classID="users" style={usersStyle} >
+                <Headnav navleft="用户列表" submodule={submodule} />
             </div>
         );
     }
-});
+}
 
-module.exports = List;
+module.exports = Users;
