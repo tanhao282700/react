@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import Headnav from '../../common/nav.js';
+import Static from '../../common/statistics.js';
 
 /*React创建组件的三种方式:
     函数式定义的无状态组件
@@ -62,11 +63,20 @@ var submodule = [
         contend:"账号管理"
     }
 ];
+var staticStyle = {
+    width:"100%",
+    height:140,
+    float:"left",
+    marginLeft:0,
+}
 class Users extends React.Component{
     render(){
         return(
             <div classID="users" style={usersStyle} >
                 <Headnav navleft="用户列表" submodule={submodule} />
+                <div classID="static" className="row" style={staticStyle}>
+                    <Static />
+                </div>
             </div>
         );
     }
