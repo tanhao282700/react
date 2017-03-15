@@ -68,14 +68,44 @@ var staticStyle = {
     height:140,
     float:"left",
     marginLeft:0,
+    paddingRight:"50px",
 }
+var statics = [
+    {
+        id:1,
+        color:"#4778c",
+        type:"新增用户",
+        pic:"../images/newuser.png"
+    },
+    {
+        id:2,
+        color:"#ffb53e",
+        type:"当前在线",
+        pic:"activeuser.png"
+    },
+    {
+        id:3,
+        color:"#2fa5ff",
+        type:"所有用户",
+        pic:"totaluser.png"
+    },
+    {
+        id:4,
+        color:"#1ebfaf",
+        type:"男女比例",
+        pic:"proportion.png"
+    }
+]
 class Users extends React.Component{
     render(){
+        var staticLists = statics.map(function(result){
+            return (<Static key={result.id} statics={result} />);
+        });
         return(
             <div classID="users" style={usersStyle} >
                 <Headnav navleft="用户列表" submodule={submodule} />
                 <div classID="static" className="row" style={staticStyle}>
-                    <Static />
+                    {staticLists}
                 </div>
             </div>
         );
